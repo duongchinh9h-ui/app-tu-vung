@@ -1,0 +1,1489 @@
+import type { DeckCreateInput, CardCreateInput } from '../types/repository'
+
+export interface SeedDeck {
+  deck: DeckCreateInput & { id: string }
+  cards: CardCreateInput[]
+}
+
+export const BOYA1_DECKS: SeedDeck[] = [
+  {
+    "deck": {
+      "id": "deck-boya1-unit-1",
+      "title": "Boya 1 - Bài 1: 你好 (Xin chào & Chào hỏi)",
+      "description": "Từ vựng cốt lõi và mở rộng chuẩn giáo trình về xưng hô, chào hỏi, cảm ơn, xin lỗi và hỏi thăm sức khỏe.",
+      "termLang": "zh-CN",
+      "definitionLang": "vi-VN"
+    },
+    "cards": [
+      {
+        "term": "你好 (Nǐ hǎo)",
+        "definition": "Xin chào, chào bạn",
+        "example": "你好！很高兴认识你。(Chào bạn! Rất vui được quen biết bạn.)",
+        "note": "Lời chào phổ biến nhất trong tiếng Trung.",
+        "starred": false
+      },
+      {
+        "term": "您 (Nín)",
+        "definition": "Ngài, ông, bà, thầy/cô (kính ngữ)",
+        "example": "老师，您好！(Em chào thầy/cô ạ!)",
+        "note": "Dùng xưng hô lễ phép với người lớn tuổi, thầy cô.",
+        "starred": true
+      },
+      {
+        "term": "您好 (Nín hǎo)",
+        "definition": "Kính chào ngài, em chào thầy/cô",
+        "example": "王老师，您好！(Em kính chào thầy Vương ạ!)",
+        "note": "Lời chào trang trọng, lễ phép.",
+        "starred": false
+      },
+      {
+        "term": "好 (Hǎo)",
+        "definition": "Tốt, khỏe, đẹp, hay",
+        "example": "我很好，谢谢你。(Tôi rất khỏe, cảm ơn bạn.)",
+        "note": "Tính từ cơ bản chỉ sự tốt lành, mạnh khỏe.",
+        "starred": false
+      },
+      {
+        "term": "吗 (Ma)",
+        "definition": "Không, à, hả (trợ từ nghi vấn)",
+        "example": "你好吗？(Bạn có khỏe không?)",
+        "note": "Đặt ở cuối câu trần thuật để tạo câu hỏi Có/Không.",
+        "starred": false
+      },
+      {
+        "term": "我 (Wǒ)",
+        "definition": "Tôi, mình, tớ",
+        "example": "我是学生。(Tôi là học sinh.)",
+        "note": "Đại từ nhân xưng ngôi thứ nhất số ít.",
+        "starred": false
+      },
+      {
+        "term": "很 (Hěn)",
+        "definition": "Rất, lắm (phó từ)",
+        "example": "我很好。(Tôi rất khỏe.)",
+        "note": "Đứng trước tính từ trong câu vị ngữ tính từ.",
+        "starred": false
+      },
+      {
+        "term": "很好 (Hěn hǎo)",
+        "definition": "Rất tốt, rất khỏe",
+        "example": "今天我很好。(Hôm nay tôi rất khỏe.)",
+        "note": "Cụm đáp quen thuộc khi được hỏi thăm.",
+        "starred": false
+      },
+      {
+        "term": "呢 (Ne)",
+        "definition": "Còn... thì sao? (trợ từ tỉnh lược)",
+        "example": "我很好，你呢？(Tôi rất khỏe, còn bạn?)",
+        "note": "Dùng cấu trúc: [Đại từ] + 呢? để hỏi lại đối phương.",
+        "starred": false
+      },
+      {
+        "term": "也 (Yě)",
+        "definition": "Cũng (phó từ)",
+        "example": "我也很好。(Tôi cũng rất khỏe.)",
+        "note": "Luôn đứng trước vị ngữ: 也 + Adj / Verb.",
+        "starred": false
+      },
+      {
+        "term": "谢谢 (Xièxie)",
+        "definition": "Cảm ơn",
+        "example": "谢谢你！(Cảm ơn bạn nhé!)",
+        "note": "Lời cảm ơn thông dụng nhất.",
+        "starred": false
+      },
+      {
+        "term": "不客气 (Bú kèqi)",
+        "definition": "Đừng khách sáo, không có chi",
+        "example": "A: 谢谢！ - B: 不客气！(A: Cảm ơn! - B: Không có gì!)",
+        "note": "Đáp lại lời cảm ơn chuẩn mực và lịch sự.",
+        "starred": true
+      },
+      {
+        "term": "不用谢 (Bú yòng xiè)",
+        "definition": "Không cần cảm ơn, không có gì",
+        "example": "不用谢，这是应该的。(Không cần cảm ơn đâu, chuyện nên làm mà.)",
+        "note": "Cách đáp lại lời cảm ơn thân mật.",
+        "starred": false
+      },
+      {
+        "term": "对不起 (Duìbuqǐ)",
+        "definition": "Xin lỗi",
+        "example": "对不起，我来晚了。(Xin lỗi, tôi đến muộn rồi.)",
+        "note": "Lời xin lỗi thông dụng trong giao tiếp.",
+        "starred": true
+      },
+      {
+        "term": "没关系 (Méi guānxi)",
+        "definition": "Không sao, không có gì",
+        "example": "A: 对不起！ - B: 没关系。(A: Xin lỗi! - B: Không sao đâu.)",
+        "note": "Đáp lại lời xin lỗi của người khác.",
+        "starred": false
+      },
+      {
+        "term": "再见 (Zàijiàn)",
+        "definition": "Tạm biệt, hẹn gặp lại",
+        "example": "老师，再见！(Em chào thầy, tạm biệt thầy ạ!)",
+        "note": "Ghép từ 再 (lại) + 见 (gặp).",
+        "starred": false
+      },
+      {
+        "term": "见 (Jiàn)",
+        "definition": "Gặp, thấy (động từ)",
+        "example": "明天见！(Mai gặp lại nhé!)",
+        "note": "Động từ thường đi cùng mốc thời gian hẹn gặp.",
+        "starred": false
+      },
+      {
+        "term": "明天 (Míngtiān)",
+        "definition": "Ngày mai",
+        "example": "明天见！(Ngày mai gặp lại nhé!)",
+        "note": "Danh từ chỉ thời gian: ngày hôm sau.",
+        "starred": false
+      },
+      {
+        "term": "明天见 (Míngtiān jiàn)",
+        "definition": "Ngày mai gặp lại",
+        "example": "大家明天见！(Mai gặp lại mọi người nhé!)",
+        "note": "Câu chào tạm biệt quen thuộc khi tan học.",
+        "starred": false
+      },
+      {
+        "term": "你们 (Nǐmen)",
+        "definition": "Các bạn, các anh (ngôi 2 số nhiều)",
+        "example": "你们好！(Chào các bạn!)",
+        "note": "Hậu tố 们 (men) chỉ số nhiều.",
+        "starred": false
+      },
+      {
+        "term": "我们 (Wǒmen)",
+        "definition": "Chúng tôi, chúng ta (ngôi 1 số nhiều)",
+        "example": "我们都很好。(Chúng tôi đều rất khỏe.)",
+        "note": "Chỉ số nhiều của người nói.",
+        "starred": false
+      },
+      {
+        "term": "他 (Tā)",
+        "definition": "Anh ấy, ông ấy, cậu ấy (ngôi 3 nam)",
+        "example": "他也很好。(Anh ấy cũng rất khỏe.)",
+        "note": "Đại từ nhân xưng ngôi thứ 3 phái nam.",
+        "starred": false
+      },
+      {
+        "term": "她 (Tā)",
+        "definition": "Cô ấy, bà ấy, chị ấy (ngôi 3 nữ)",
+        "example": "她好吗？(Cô ấy có khỏe không?)",
+        "note": "Đại từ nhân xưng ngôi thứ 3 phái nữ.",
+        "starred": false
+      },
+      {
+        "term": "他们 (Tāmen)",
+        "definition": "Bọn họ, họ (ngôi 3 số nhiều nam/chung)",
+        "example": "他们也来学校。(Họ cũng đến trường.)",
+        "note": "Chỉ nhóm người nam hoặc có cả nam lẫn nữ.",
+        "starred": false
+      },
+      {
+        "term": "她们 (Tāmen)",
+        "definition": "Các cô ấy, các bà ấy (ngôi 3 nữ số nhiều)",
+        "example": "她们很好。(Các cô ấy rất khỏe.)",
+        "note": "Chỉ nhóm toàn bộ là nữ giới.",
+        "starred": false
+      },
+      {
+        "term": "早上 (Zǎoshang)",
+        "definition": "Buổi sáng sớm",
+        "example": "早上好！(Chào buổi sáng!)",
+        "note": "Thời gian sáng sớm đầu ngày.",
+        "starred": false
+      },
+      {
+        "term": "早上好 (Zǎoshang hǎo)",
+        "definition": "Chào buổi sáng",
+        "example": "老师，早上好！(Thầy ơi, chào buổi sáng thầy ạ!)",
+        "note": "Lời chào vào buổi sáng.",
+        "starred": false
+      },
+      {
+        "term": "晚上 (Wǎnshang)",
+        "definition": "Buổi tối",
+        "example": "晚上好！(Chào buổi tối!)",
+        "note": "Thời gian buổi tối.",
+        "starred": false
+      },
+      {
+        "term": "晚上好 (Wǎnshang hǎo)",
+        "definition": "Chào buổi tối",
+        "example": "各位同学，晚上好！(Chào buổi tối các bạn học!)",
+        "note": "Lời chào vào buổi tối.",
+        "starred": false
+      },
+      {
+        "term": "不 (Bù)",
+        "definition": "Không, chẳng (phó từ phủ định)",
+        "example": "我不好。(Tôi không khỏe.)",
+        "note": "Phó từ phủ định cơ bản nhất trong tiếng Hán.",
+        "starred": false
+      },
+      {
+        "term": "不好 (Bù hǎo)",
+        "definition": "Không tốt, không khỏe",
+        "example": "他今天身体不好。(Hôm nay sức khỏe anh ấy không tốt.)",
+        "note": "Trái nghĩa với 好 (tốt, khỏe).",
+        "starred": false
+      }
+    ]
+  },
+  {
+    "deck": {
+      "id": "deck-boya1-unit-2",
+      "title": "Boya 1 - Bài 2: 你是哪国人 (Quốc tịch & Ngôn ngữ)",
+      "description": "Làm quen, hỏi tên, hỏi quốc tịch, giới thiệu thầy trò và ngôn ngữ đang học.",
+      "termLang": "zh-CN",
+      "definitionLang": "vi-VN"
+    },
+    "cards": [
+      {
+        "term": "是 (Shì)",
+        "definition": "Là, phải (động từ phán đoán)",
+        "example": "我是越南人。(Tôi là người Việt Nam.)",
+        "note": "Phủ định bắt buộc dùng 不是.",
+        "starred": false
+      },
+      {
+        "term": "不是 (Bú shì)",
+        "definition": "Không phải",
+        "example": "他不是老师，他是学生。(Anh ấy không phải là thầy giáo, anh ấy là học sinh.)",
+        "note": "Hình thức phủ định của 是.",
+        "starred": false
+      },
+      {
+        "term": "哪 (Nǎ)",
+        "definition": "Nào, đâu (đại từ nghi vấn)",
+        "example": "你是哪国人？(Bạn là người nước nào?)",
+        "note": "Dùng trong câu hỏi lựa chọn: 哪国, 哪个.",
+        "starred": false
+      },
+      {
+        "term": "国 (Guó)",
+        "definition": "Nước, quốc gia",
+        "example": "中国是一个大国。(Trung Quốc là một nước lớn.)",
+        "note": "Đứng sau tên nước: 中国, 美国, 英国.",
+        "starred": false
+      },
+      {
+        "term": "人 (Rén)",
+        "definition": "Người, nhân",
+        "example": "他是好人。(Anh ấy là người tốt.)",
+        "note": "Tên nước + 人 = Người nước đó.",
+        "starred": false
+      },
+      {
+        "term": "哪国人 (Nǎ guó rén)",
+        "definition": "Người nước nào",
+        "example": "请问，你是哪国人？(Xin hỏi, bạn là người nước nào?)",
+        "note": "Cụm từ then chốt hỏi quê hương, quốc tịch.",
+        "starred": true
+      },
+      {
+        "term": "叫 (Jiào)",
+        "definition": "Tên là, gọi là",
+        "example": "我叫李明。(Tôi tên là Lý Minh.)",
+        "note": "Cấu trúc giới thiệu tên: 我叫 + Tên.",
+        "starred": false
+      },
+      {
+        "term": "什么 (Shénme)",
+        "definition": "Cái gì, gì (đại từ nghi vấn)",
+        "example": "你叫什么名字？(Bạn tên là gì?)",
+        "note": "Đứng trước danh từ: 什么名字, 什么书.",
+        "starred": false
+      },
+      {
+        "term": "名字 (Míngzi)",
+        "definition": "Tên, họ tên",
+        "example": "你的名字很好听。(Tên của bạn rất hay.)",
+        "note": "Danh từ chỉ tên người.",
+        "starred": false
+      },
+      {
+        "term": "老师 (Lǎoshī)",
+        "definition": "Giáo viên, thầy cô giáo",
+        "example": "王老师是我们的汉语老师。(Thầy Vương là giáo viên tiếng Hán của chúng tôi.)",
+        "note": "Xưng hô kính trọng: Họ + 老师.",
+        "starred": false
+      },
+      {
+        "term": "学生 (Xuésheng)",
+        "definition": "Học sinh, sinh viên",
+        "example": "我们都是大学学生。(Chúng tôi đều là sinh viên đại học.)",
+        "note": "Từ chỉ người đi học.",
+        "starred": false
+      },
+      {
+        "term": "学 (Xué)",
+        "definition": "Học",
+        "example": "我学汉语。(Tôi học tiếng Hán.)",
+        "note": "Động từ chỉ hành động học tập.",
+        "starred": false
+      },
+      {
+        "term": "学习 (Xuéxí)",
+        "definition": "Học tập",
+        "example": "我们在大学学习。(Chúng tôi học tập ở trường đại học.)",
+        "note": "Động từ hoặc danh từ chỉ việc học tập.",
+        "starred": false
+      },
+      {
+        "term": "汉语 (Hànyǔ)",
+        "definition": "Tiếng Hán, tiếng Trung",
+        "example": "汉语难学吗？(Tiếng Hán khó học không?)",
+        "note": "Ngôn ngữ của người Hán.",
+        "starred": false
+      },
+      {
+        "term": "中文 (Zhōngwén)",
+        "definition": "Tiếng Trung, chữ Hán",
+        "example": "我会说中文。(Tôi biết nói tiếng Trung.)",
+        "note": "Tương đương 汉语.",
+        "starred": false
+      },
+      {
+        "term": "中国 (Zhōngguó)",
+        "definition": "Trung Quốc",
+        "example": "我去中国。(Tôi đi Trung Quốc.)",
+        "note": "Tên nước Trung Quốc.",
+        "starred": false
+      },
+      {
+        "term": "中国人 (Zhōngguó rén)",
+        "definition": "Người Trung Quốc",
+        "example": "他是中国人。(Anh ấy là người Trung Quốc.)",
+        "note": "Chỉ quốc tịch Trung Quốc.",
+        "starred": false
+      },
+      {
+        "term": "越南 (Yuènán)",
+        "definition": "Việt Nam",
+        "example": "我来自越南。(Tôi đến từ Việt Nam.)",
+        "note": "Tên nước Việt Nam.",
+        "starred": false
+      },
+      {
+        "term": "越南人 (Yuènán rén)",
+        "definition": "Người Việt Nam",
+        "example": "我是越南人。(Tôi là người Việt Nam.)",
+        "note": "Chỉ người Việt Nam.",
+        "starred": false
+      },
+      {
+        "term": "美国 (Měiguó)",
+        "definition": "Nước Mỹ, Hoa Kỳ",
+        "example": "大卫来自美国。(David đến từ nước Mỹ.)",
+        "note": "Tên nước Mỹ.",
+        "starred": false
+      },
+      {
+        "term": "美国人 (Měiguó rén)",
+        "definition": "Người Mỹ",
+        "example": "玛丽是美国人。(Mary là người Mỹ.)",
+        "note": "Chỉ người Mỹ.",
+        "starred": false
+      },
+      {
+        "term": "英国 (Yīngguó)",
+        "definition": "Nước Anh",
+        "example": "他在英国学习。(Anh ấy học tập ở nước Anh.)",
+        "note": "Tên nước Anh.",
+        "starred": false
+      },
+      {
+        "term": "英国人 (Yīngguó rén)",
+        "definition": "Người Anh",
+        "example": "威廉是英国人。(William là người Anh.)",
+        "note": "Chỉ người Anh.",
+        "starred": false
+      },
+      {
+        "term": "英语 (Yīngyǔ)",
+        "definition": "Tiếng Anh",
+        "example": "他说英语。(Anh ấy nói tiếng Anh.)",
+        "note": "Ngôn ngữ tiếng Anh.",
+        "starred": false
+      },
+      {
+        "term": "谁 (Shéi / Shuí)",
+        "definition": "Ai (đại từ nghi vấn)",
+        "example": "他是谁？(Anh ấy là ai thế?)",
+        "note": "Dùng để hỏi về người.",
+        "starred": true
+      },
+      {
+        "term": "同学 (Tóngxué)",
+        "definition": "Bạn học, bạn cùng lớp",
+        "example": "李明是我的同学。(Lý Minh là bạn cùng lớp của tôi.)",
+        "note": "Chỉ người cùng học một lớp, một trường.",
+        "starred": false
+      },
+      {
+        "term": "朋友 (Péngyou)",
+        "definition": "Bạn bè, bạn",
+        "example": "我们都是好朋友。(Chúng tôi đều là bạn tốt của nhau.)",
+        "note": "Từ chỉ mối quan hệ bạn bè.",
+        "starred": false
+      },
+      {
+        "term": "请问 (Qǐngwèn)",
+        "definition": "Xin hỏi (lịch sự)",
+        "example": "请问，您贵姓？(Xin hỏi, quý danh của ngài là gì ạ?)",
+        "note": "Kính từ lịch sự dùng mở đầu câu hỏi.",
+        "starred": false
+      },
+      {
+        "term": "都 (Dōu)",
+        "definition": "Đều, tất cả (phó từ)",
+        "example": "我们都是学生。(Chúng tôi đều là học sinh.)",
+        "note": "Đứng trước vị ngữ: Chủ ngữ số nhiều + 都 + V/Adj.",
+        "starred": true
+      }
+    ]
+  },
+  {
+    "deck": {
+      "id": "deck-boya1-unit-3",
+      "title": "Boya 1 - Bài 3: 那是你的书吗 (Đồ dùng học tập & Đại từ)",
+      "description": "Chỉ định đồ vật gần xa, hỏi đồ dùng học tập trong lớp và trợ từ sở hữu \"的\".",
+      "termLang": "zh-CN",
+      "definitionLang": "vi-VN"
+    },
+    "cards": [
+      {
+        "term": "这 (Zhè)",
+        "definition": "Đây, này",
+        "example": "这是我的书。(Đây là sách của tôi.)",
+        "note": "Chỉ định gần.",
+        "starred": false
+      },
+      {
+        "term": "那 (Nà)",
+        "definition": "Kia, đó",
+        "example": "那是你的词典吗？(Kia có phải từ điển của bạn không?)",
+        "note": "Chỉ định xa.",
+        "starred": false
+      },
+      {
+        "term": "这儿 (Zhèr)",
+        "definition": "Ở đây, chỗ này",
+        "example": "请坐在这儿。(Xin mời ngồi ở đây.)",
+        "note": "Nơi chốn gần.",
+        "starred": false
+      },
+      {
+        "term": "那儿 (Nàr)",
+        "definition": "Ở kia, chỗ kia",
+        "example": "他在那儿。(Anh ấy ở đằng kia.)",
+        "note": "Nơi chốn xa.",
+        "starred": false
+      },
+      {
+        "term": "书 (Shū)",
+        "definition": "Sách",
+        "example": "我买了一本书。(Tôi đã mua một quyển sách.)",
+        "note": "Lượng từ: 本 (běn).",
+        "starred": false
+      },
+      {
+        "term": "本子 (Běnzi)",
+        "definition": "Vở ghi, tập",
+        "example": "这是我的汉语本子。(Đây là vở tiếng Hán của tôi.)",
+        "note": "Lượng từ: 本.",
+        "starred": false
+      },
+      {
+        "term": "词典 (Cídiǎn)",
+        "definition": "Từ điển",
+        "example": "那是汉英词典。(Kia là từ điển Hán-Anh.)",
+        "note": "Lượng từ: 本.",
+        "starred": false
+      },
+      {
+        "term": "笔 (Bǐ)",
+        "definition": "Bút, viết",
+        "example": "我有一支笔。(Tôi có một cây bút.)",
+        "note": "Lượng từ: 支 (zhī).",
+        "starred": false
+      },
+      {
+        "term": "铅笔 (Qiānbǐ)",
+        "definition": "Bút chì",
+        "example": "借我一支铅笔。(Cho tôi mượn một cây bút chì.)",
+        "note": "Lượng từ: 支.",
+        "starred": false
+      },
+      {
+        "term": "包 (Bāo)",
+        "definition": "Túi, cặp, ba lô",
+        "example": "这是谁的包？(Đây là túi của ai?)",
+        "note": "Lượng từ: 个.",
+        "starred": false
+      },
+      {
+        "term": "书包 (Shūbāo)",
+        "definition": "Cặp sách",
+        "example": "这是我的书包。(Đây là cặp sách của tôi.)",
+        "note": "Lượng từ: 个.",
+        "starred": false
+      },
+      {
+        "term": "的 (De)",
+        "definition": "Của (trợ từ sở hữu)",
+        "example": "这是我的书。(Đây là sách của tôi.)",
+        "note": "Định ngữ + 的 + Trung tâm ngữ.",
+        "starred": false
+      },
+      {
+        "term": "谁的 (Shéi de)",
+        "definition": "Của ai",
+        "example": "那是谁的笔？(Kia là bút của ai?)",
+        "note": "Hỏi sở hữu.",
+        "starred": true
+      },
+      {
+        "term": "教室 (Jiàoshì)",
+        "definition": "Phòng học, lớp học",
+        "example": "我们在教室上课。(Chúng tôi học ở trong lớp.)",
+        "note": "Phòng học.",
+        "starred": false
+      },
+      {
+        "term": "桌子 (Zhuōzi)",
+        "definition": "Cái bàn",
+        "example": "桌子上有一本书。(Trên bàn có một quyển sách.)",
+        "note": "Lượng từ: 张 (zhāng).",
+        "starred": false
+      },
+      {
+        "term": "椅子 (Yǐzi)",
+        "definition": "Cái ghế",
+        "example": "教室里有很多椅子。(Trong lớp có rất nhiều ghế.)",
+        "note": "Lượng từ: 把 (bǎ).",
+        "starred": false
+      },
+      {
+        "term": "本 (Běn)",
+        "definition": "Cuốn, quyển (lượng từ)",
+        "example": "两本书。(Hai quyển sách.)",
+        "note": "Lượng từ cho sách, vở, từ điển.",
+        "starred": true
+      },
+      {
+        "term": "支 (Zhī)",
+        "definition": "Cây, chiếc (lượng từ bút)",
+        "example": "一支笔。(Một cây bút.)",
+        "note": "Lượng từ cho bút.",
+        "starred": true
+      },
+      {
+        "term": "个 (Gè)",
+        "definition": "Cái, con, người (lượng từ)",
+        "example": "一个书包。(Một chiếc cặp sách.)",
+        "note": "Lượng từ thông dụng.",
+        "starred": false
+      }
+    ]
+  },
+  {
+    "deck": {
+      "id": "deck-boya1-unit-4",
+      "title": "Boya 1 - Bài 4: 你的电话号码是多少 (Số điện thoại & Con số)",
+      "description": "Số đếm từ 0 đến 10, hỏi số điện thoại, số phòng và đại từ nghi vấn 多少.",
+      "termLang": "zh-CN",
+      "definitionLang": "vi-VN"
+    },
+    "cards": [
+      {
+        "term": "电话 (Diànhuà)",
+        "definition": "Điện thoại",
+        "example": "这是他的电话。(Đây là điện thoại của anh ấy.)",
+        "note": "Danh từ.",
+        "starred": false
+      },
+      {
+        "term": "号码 (Hàomǎ)",
+        "definition": "Số, mã số",
+        "example": "电话号码是多少？(Số điện thoại là bao nhiêu?)",
+        "note": "Danh từ.",
+        "starred": false
+      },
+      {
+        "term": "手机 (Shǒujī)",
+        "definition": "Điện thoại di động",
+        "example": "我的手机在这儿。(Điện thoại của tôi ở đây.)",
+        "note": "Danh từ.",
+        "starred": false
+      },
+      {
+        "term": "多少 (Duōshao)",
+        "definition": "Bao nhiêu",
+        "example": "你的电话是多少？(Điện thoại của bạn là bao nhiêu?)",
+        "note": "Hỏi số lượng.",
+        "starred": true
+      },
+      {
+        "term": "零 (Líng)",
+        "definition": "Số 0",
+        "example": "二零八房间。(Phòng 208.)",
+        "note": "Số 0.",
+        "starred": false
+      },
+      {
+        "term": "一 (Yī / Yāo)",
+        "definition": "Số 1",
+        "example": "一二三四五。(1 2 3 4 5.)",
+        "note": "Trong số điện thoại đọc là yāo.",
+        "starred": true
+      },
+      {
+        "term": "二 (Èr)",
+        "definition": "Số 2",
+        "example": "星期二。(Thứ Ba.)",
+        "note": "Đếm số thứ tự.",
+        "starred": false
+      },
+      {
+        "term": "两 (Liǎng)",
+        "definition": "Hai (trước lượng từ)",
+        "example": "两个人。(Hai người.)",
+        "note": "Dùng trước lượng từ.",
+        "starred": true
+      },
+      {
+        "term": "三 (Sān)",
+        "definition": "Số 3",
+        "example": "三本书。(Ba quyển sách.)",
+        "note": "Số 3.",
+        "starred": false
+      },
+      {
+        "term": "四 (Sì)",
+        "definition": "Số 4",
+        "example": "四个人。(Bốn người.)",
+        "note": "Số 4.",
+        "starred": false
+      },
+      {
+        "term": "五 (Wǔ)",
+        "definition": "Số 5",
+        "example": "五个学生。(Năm học sinh.)",
+        "note": "Số 5.",
+        "starred": false
+      },
+      {
+        "term": "六 (Liù)",
+        "definition": "Số 6",
+        "example": "六支笔。(Sáu cây bút.)",
+        "note": "Số 6.",
+        "starred": false
+      },
+      {
+        "term": "七 (Qī)",
+        "definition": "Số 7",
+        "example": "七天。(Bảy ngày.)",
+        "note": "Số 7.",
+        "starred": false
+      },
+      {
+        "term": "八 (Bā)",
+        "definition": "Số 8",
+        "example": "八个字。(Tám chữ.)",
+        "note": "Số 8.",
+        "starred": false
+      },
+      {
+        "term": "九 (Jiǔ)",
+        "definition": "Số 9",
+        "example": "九点。(Chín giờ.)",
+        "note": "Số 9.",
+        "starred": false
+      },
+      {
+        "term": "十 (Shí)",
+        "definition": "Số 10",
+        "example": "十个老师。(Mười thầy giáo.)",
+        "note": "Số 10.",
+        "starred": false
+      },
+      {
+        "term": "房间 (Fángjiān)",
+        "definition": "Phòng, căn phòng",
+        "example": "我住201房间。(Tôi ở phòng 201.)",
+        "note": "Danh từ.",
+        "starred": false
+      },
+      {
+        "term": "知道 (Zhīdào)",
+        "definition": "Biết, nắm rõ",
+        "example": "我不知道他的电话。(Tôi không biết số điện thoại của cậu ấy.)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "住 (Zhù)",
+        "definition": "Ở, cư trú",
+        "example": "你住哪儿？(Bạn ở đâu?)",
+        "note": "Động từ.",
+        "starred": false
+      }
+    ]
+  },
+  {
+    "deck": {
+      "id": "deck-boya1-unit-5",
+      "title": "Boya 1 - Bài 5: 我们去吃早饭 (Ăn uống & Thời gian)",
+      "description": "Nói về thời gian trong ngày (giờ, phút, rưỡi) và các món ăn thường gặp.",
+      "termLang": "zh-CN",
+      "definitionLang": "vi-VN"
+    },
+    "cards": [
+      {
+        "term": "去 (Qù)",
+        "definition": "Đi",
+        "example": "我们去食堂。(Chúng tôi đi nhà ăn.)",
+        "note": "Động từ di chuyển.",
+        "starred": false
+      },
+      {
+        "term": "吃 (Chī)",
+        "definition": "Ăn",
+        "example": "你吃什么？(Bạn ăn cái gì?)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "饭 (Fàn)",
+        "definition": "Cơm, bữa ăn",
+        "example": "去吃饭吧！(Đi ăn cơm thôi!)",
+        "note": "Danh từ.",
+        "starred": false
+      },
+      {
+        "term": "早饭 (Zǎofàn)",
+        "definition": "Bữa sáng",
+        "example": "吃早饭了嗎？(Đã ăn sáng chưa?)",
+        "note": "Bữa sáng.",
+        "starred": false
+      },
+      {
+        "term": "午饭 (Wǔfàn)",
+        "definition": "Bữa trưa",
+        "example": "我们去吃午饭。(Chúng tôi đi ăn trưa.)",
+        "note": "Bữa trưa.",
+        "starred": false
+      },
+      {
+        "term": "晚饭 (Wǎnfàn)",
+        "definition": "Bữa tối",
+        "example": "晚上吃晚饭。(Buổi tối ăn cơm tối.)",
+        "note": "Bữa tối.",
+        "starred": false
+      },
+      {
+        "term": "食堂 (Shítáng)",
+        "definition": "Nhà ăn, căng tin",
+        "example": "学校食堂。(Nhà ăn của trường.)",
+        "note": "Danh từ nơi chốn.",
+        "starred": false
+      },
+      {
+        "term": "喝 (Hē)",
+        "definition": "Uống",
+        "example": "喝水。(Uống nước.)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "水 (Shuǐ)",
+        "definition": "Nước",
+        "example": "我喝水。(Tôi uống nước.)",
+        "note": "Danh từ.",
+        "starred": false
+      },
+      {
+        "term": "茶 (Chá)",
+        "definition": "Trà, chè",
+        "example": "喝中国茶。(Uống trà Trung Quốc.)",
+        "note": "Danh từ.",
+        "starred": false
+      },
+      {
+        "term": "咖啡 (Kāfēi)",
+        "definition": "Cà phê",
+        "example": "喝一杯咖啡。(Uống một ly cà phê.)",
+        "note": "Danh từ.",
+        "starred": false
+      },
+      {
+        "term": "包子 (Bāozi)",
+        "definition": "Bánh bao",
+        "example": "我吃两个包子。(Tôi ăn hai chiếc bánh bao.)",
+        "note": "Món ăn.",
+        "starred": false
+      },
+      {
+        "term": "米饭 (Mǐfàn)",
+        "definition": "Cơm trắng",
+        "example": "一碗米饭。(Một bát cơm trắng.)",
+        "note": "Món ăn.",
+        "starred": false
+      },
+      {
+        "term": "现在 (Xiànzài)",
+        "definition": "Bây giờ, hiện tại",
+        "example": "现在几点？(Bây giờ là mấy giờ?)",
+        "note": "Thời gian.",
+        "starred": false
+      },
+      {
+        "term": "点 (Diǎn)",
+        "definition": "Giờ (đồng hồ)",
+        "example": "八点。(Tám giờ.)",
+        "note": "Chỉ giờ.",
+        "starred": false
+      },
+      {
+        "term": "分 (Fēn)",
+        "definition": "Phút",
+        "example": "八点十分。(Tám giờ mười phút.)",
+        "note": "Chỉ phút.",
+        "starred": false
+      },
+      {
+        "term": "半 (Bàn)",
+        "definition": "Rưỡi, nửa (30 phút)",
+        "example": "七点半。(Bảy giờ rưỡi.)",
+        "note": "30 phút.",
+        "starred": true
+      },
+      {
+        "term": "一起 (Yìqǐ)",
+        "definition": "Cùng nhau",
+        "example": "我们一起去吧！(Chúng mình cùng đi nhé!)",
+        "note": "Phó từ.",
+        "starred": false
+      }
+    ]
+  },
+  {
+    "deck": {
+      "id": "deck-boya1-unit-6",
+      "title": "Boya 1 - Bài 6: 苹果多少钱一斤 (Hỏi giá & Hoa quả & Tiền tệ)",
+      "description": "Mua bán hoa quả, hỏi giá, mặc cả và các đơn vị tiền tệ Trung Quốc.",
+      "termLang": "zh-CN",
+      "definitionLang": "vi-VN"
+    },
+    "cards": [
+      {
+        "term": "买 (Mǎi)",
+        "definition": "Mua",
+        "example": "我想买苹果。(Tôi muốn mua táo.)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "卖 (Mài)",
+        "definition": "Bán",
+        "example": "怎么卖？(Bán thế nào?)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "苹果 (Píngguǒ)",
+        "definition": "Quả táo",
+        "example": "苹果多少钱？(Táo bao nhiêu tiền?)",
+        "note": "Hoa quả.",
+        "starred": false
+      },
+      {
+        "term": "香蕉 (Xiāngjiāo)",
+        "definition": "Quả chuối",
+        "example": "买两斤香蕉。(Mua hai cân chuối.)",
+        "note": "Hoa quả.",
+        "starred": false
+      },
+      {
+        "term": "水果 (Shuǐguǒ)",
+        "definition": "Trái cây, hoa quả",
+        "example": "吃水果。(Ăn trái cây.)",
+        "note": "Danh từ.",
+        "starred": false
+      },
+      {
+        "term": "多少钱 (Duōshao qián)",
+        "definition": "Bao nhiêu tiền",
+        "example": "这本词典多少钱？(Từ điển này bao nhiêu tiền?)",
+        "note": "Hỏi giá tiền.",
+        "starred": true
+      },
+      {
+        "term": "斤 (Jīn)",
+        "definition": "Cân (500g)",
+        "example": "一斤苹果。(Một cân táo = 500g.)",
+        "note": "Đơn vị cân TQ.",
+        "starred": true
+      },
+      {
+        "term": "块 / 元 (Kuài / Yuán)",
+        "definition": "Đồng tệ",
+        "example": "五块钱。(Năm đồng tệ.)",
+        "note": "Đơn vị tiền chính.",
+        "starred": false
+      },
+      {
+        "term": "毛 / 角 (Máo / Jiǎo)",
+        "definition": "Hào (1/10 tệ)",
+        "example": "三块五毛。(Ba tệ năm hào.)",
+        "note": "Hào.",
+        "starred": false
+      },
+      {
+        "term": "贵 (Guì)",
+        "definition": "Đắt, đắt đỏ",
+        "example": "太贵了！(Đắt quá rồi!)",
+        "note": "Tính từ.",
+        "starred": false
+      },
+      {
+        "term": "便宜 (Piányi)",
+        "definition": "Rẻ, giá hời",
+        "example": "便宜一点儿吧！(Rẻ hơn một chút đi!)",
+        "note": "Tính từ.",
+        "starred": false
+      },
+      {
+        "term": "太...了 (Tài...le)",
+        "definition": "Quá... rồi",
+        "example": "太好了！(Tốt quá rồi!)",
+        "note": "Cấu trúc cảm thán.",
+        "starred": false
+      },
+      {
+        "term": "一共 (Yígòng)",
+        "definition": "Tổng cộng",
+        "example": "一共十块。(Tổng cộng mười tệ.)",
+        "note": "Phó từ.",
+        "starred": false
+      },
+      {
+        "term": "还要别的吗 (Hái yào bié de ma)",
+        "definition": "Còn cần gì khác không?",
+        "example": "还要别的吗？(Còn lấy gì khác không?)",
+        "note": "Câu hỏi mua sắm.",
+        "starred": false
+      },
+      {
+        "term": "不要了 (Bú yào le)",
+        "definition": "Không lấy nữa",
+        "example": "不要了，谢谢。(Không lấy nữa, cảm ơn.)",
+        "note": "Từ chối mua thêm.",
+        "starred": false
+      },
+      {
+        "term": "找钱 (Zhǎo qián)",
+        "definition": "Thối lại tiền thừa",
+        "example": "找你两块。(Thối lại bạn hai tệ.)",
+        "note": "Trả tiền thừa.",
+        "starred": false
+      }
+    ]
+  },
+  {
+    "deck": {
+      "id": "deck-boya1-unit-7",
+      "title": "Boya 1 - Bài 7: 我换人民币 (Ngân hàng & Đổi tiền)",
+      "description": "Giao dịch đổi tiền tại ngân hàng, đơn vị tiền tệ RMB và USD.",
+      "termLang": "zh-CN",
+      "definitionLang": "vi-VN"
+    },
+    "cards": [
+      {
+        "term": "换 (Huàn)",
+        "definition": "Đổi (tiền, đồ vật)",
+        "example": "我想换钱。(Tôi muốn đổi tiền.)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "钱 (Qián)",
+        "definition": "Tiền",
+        "example": "你有钱吗？(Bạn có tiền không?)",
+        "note": "Danh từ.",
+        "starred": false
+      },
+      {
+        "term": "人民币 (Rénmínbì)",
+        "definition": "Nhân dân tệ (RMB)",
+        "example": "换人民币。(Đổi Nhân dân tệ.)",
+        "note": "Tiền Trung Quốc.",
+        "starred": false
+      },
+      {
+        "term": "美元 (Měiyuán)",
+        "definition": "Đô la Mỹ (USD)",
+        "example": "一百美元。(Một trăm đô la Mỹ.)",
+        "note": "Tiền Mỹ.",
+        "starred": false
+      },
+      {
+        "term": "银行 (Yínháng)",
+        "definition": "Ngân hàng",
+        "example": "去银行换钱。(Đến ngân hàng đổi tiền.)",
+        "note": "Địa điểm.",
+        "starred": false
+      },
+      {
+        "term": "等 (Děng)",
+        "definition": "Đợi, chờ",
+        "example": "请等一下。(Xin đợi một lát.)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "给 (Gěi)",
+        "definition": "Cho, đưa cho",
+        "example": "给你钱。(Đưa tiền cho bạn.)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "数 (Shǔ)",
+        "definition": "Đếm (tiền)",
+        "example": "请数一数。(Xin đếm lại nhé.)",
+        "note": "Động từ.",
+        "starred": true
+      },
+      {
+        "term": "请 (Qǐng)",
+        "definition": "Mời, xin vui lòng",
+        "example": "请坐！(Xin mời ngồi!)",
+        "note": "Kính từ lịch sự.",
+        "starred": false
+      },
+      {
+        "term": "对 (Duì)",
+        "definition": "Đúng, chính xác",
+        "example": "钱都对。(Tiền đúng cả rồi.)",
+        "note": "Tính từ.",
+        "starred": false
+      },
+      {
+        "term": "百 (Bǎi)",
+        "definition": "Trăm",
+        "example": "一百块。(Một trăm tệ.)",
+        "note": "Hàng trăm.",
+        "starred": false
+      },
+      {
+        "term": "千 (Qiān)",
+        "definition": "Nghìn, ngàn",
+        "example": "一千块。(Một nghìn tệ.)",
+        "note": "Hàng nghìn.",
+        "starred": false
+      }
+    ]
+  },
+  {
+    "deck": {
+      "id": "deck-boya1-unit-8",
+      "title": "Boya 1 - Bài 8: 图书馆在食堂北边 (Phương hướng & Vị trí)",
+      "description": "Hỏi đường, chỉ hướng Đông Tây Nam Bắc, khoảng cách gần xa.",
+      "termLang": "zh-CN",
+      "definitionLang": "vi-VN"
+    },
+    "cards": [
+      {
+        "term": "在 (Zài)",
+        "definition": "Ở, tại",
+        "example": "他在哪儿？(Anh ấy ở đâu?)",
+        "note": "Giới từ / Động từ.",
+        "starred": false
+      },
+      {
+        "term": "哪儿 (Nǎr)",
+        "definition": "Ở đâu, chỗ nào",
+        "example": "图书馆在哪儿？(Thư viện ở đâu?)",
+        "note": "Đại từ nghi vấn.",
+        "starred": false
+      },
+      {
+        "term": "东 (Dōng)",
+        "definition": "Đông (hướng đông)",
+        "example": "东边。(Phía đông.)",
+        "note": "Phương hướng.",
+        "starred": false
+      },
+      {
+        "term": "南 (Nán)",
+        "definition": "Nam (hướng nam)",
+        "example": "南边。(Phía nam.)",
+        "note": "Phương hướng.",
+        "starred": false
+      },
+      {
+        "term": "西 (Xī)",
+        "definition": "Tây (hướng tây)",
+        "example": "西边。(Phía tây.)",
+        "note": "Phương hướng.",
+        "starred": false
+      },
+      {
+        "term": "北 (Běi)",
+        "definition": "Bắc (hướng bắc)",
+        "example": "北边。(Phía bắc.)",
+        "note": "Phương hướng.",
+        "starred": false
+      },
+      {
+        "term": "边 (Biān)",
+        "definition": "Phía, bên",
+        "example": "前边。(Phía trước.)",
+        "note": "Hậu tố phương vị.",
+        "starred": false
+      },
+      {
+        "term": "旁边 (Pángbiān)",
+        "definition": "Bên cạnh",
+        "example": "他在我旁边。(Anh ấy ở bên cạnh tôi.)",
+        "note": "Vị trí.",
+        "starred": false
+      },
+      {
+        "term": "前 (Qián)",
+        "definition": "Trước",
+        "example": "前边。(Phía trước.)",
+        "note": "Vị trí.",
+        "starred": false
+      },
+      {
+        "term": "后 (Hòu)",
+        "definition": "Sau",
+        "example": "后边。(Phía sau.)",
+        "note": "Vị trí.",
+        "starred": false
+      },
+      {
+        "term": "左 (Zuǒ)",
+        "definition": "Trái",
+        "example": "往左拐。(Rẽ sang trái.)",
+        "note": "Vị trí.",
+        "starred": false
+      },
+      {
+        "term": "右 (Yòu)",
+        "definition": "Phải",
+        "example": "往右拐。(Rẽ sang phải.)",
+        "note": "Vị trí.",
+        "starred": false
+      },
+      {
+        "term": "怎么走 (Zěnme zǒu)",
+        "definition": "Đi như thế nào",
+        "example": "请问去图书馆怎么走？(Xin hỏi đi thư viện như thế nào?)",
+        "note": "Hỏi đường.",
+        "starred": true
+      },
+      {
+        "term": "往 (Wǎng)",
+        "definition": "Hướng về, đi về",
+        "example": "往前走。(Đi về phía trước.)",
+        "note": "Giới từ hướng đi.",
+        "starred": true
+      },
+      {
+        "term": "拐 (Guǎi)",
+        "definition": "Rẽ, quẹo",
+        "example": "往右拐。(Rẽ sang phải.)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "一直 (Yìzhí)",
+        "definition": "Thẳng, một mạch",
+        "example": "一直走。(Cứ đi thẳng.)",
+        "note": "Phó từ.",
+        "starred": false
+      },
+      {
+        "term": "远 (Yuǎn)",
+        "definition": "Xa",
+        "example": "离这儿远吗？(Cách đây xa không?)",
+        "note": "Tính từ.",
+        "starred": false
+      },
+      {
+        "term": "近 (Jìn)",
+        "definition": "Gần",
+        "example": "很近。(Rất gần.)",
+        "note": "Tính từ.",
+        "starred": false
+      },
+      {
+        "term": "离 (Lí)",
+        "definition": "Cách (khoảng cách)",
+        "example": "学校离银行很近。(Trường cách ngân hàng rất gần.)",
+        "note": "Giới từ đo cự ly.",
+        "starred": true
+      },
+      {
+        "term": "图书馆 (Túshūguǎn)",
+        "definition": "Thư viện",
+        "example": "我去图书馆看书。(Tôi đến thư viện đọc sách.)",
+        "note": "Nơi chốn.",
+        "starred": false
+      },
+      {
+        "term": "楼 (Lóu)",
+        "definition": "Tòa nhà, tầng lầu",
+        "example": "教学楼。(Tòa nhà giảng đường.)",
+        "note": "Danh từ.",
+        "starred": false
+      }
+    ]
+  },
+  {
+    "deck": {
+      "id": "deck-boya1-unit-9",
+      "title": "Boya 1 - Bài 9: 我在宿舍等你 (Nơi chốn & Hẹn gặp)",
+      "description": "Hẹn gặp gỡ bạn bè, giải quyết công việc, địa điểm trong ký túc xá.",
+      "termLang": "zh-CN",
+      "definitionLang": "vi-VN"
+    },
+    "cards": [
+      {
+        "term": "宿舍 (Sùshè)",
+        "definition": "Ký túc xá",
+        "example": "回宿舍。(Về ký túc xá.)",
+        "note": "Nơi ở của sinh viên.",
+        "starred": false
+      },
+      {
+        "term": "等 (Děng)",
+        "definition": "Đợi, chờ",
+        "example": "我在门口等你。(Tôi ở cổng đợi bạn.)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "门 (Mén)",
+        "definition": "Cửa, cổng",
+        "example": "开门。(Mở cửa.)",
+        "note": "Danh từ.",
+        "starred": false
+      },
+      {
+        "term": "门口 (Ménkǒu)",
+        "definition": "Cửa ra vào, cổng",
+        "example": "宿舍门口。(Cổng ký túc xá.)",
+        "note": "Vị trí.",
+        "starred": false
+      },
+      {
+        "term": "找 (Zhǎo)",
+        "definition": "Tìm kiếm, gặp",
+        "example": "你找谁？(Bạn tìm ai thế?)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "有空儿 (Yǒu kòngr)",
+        "definition": "Có thời gian rảnh",
+        "example": "明天你有空儿吗？(Ngày mai bạn có rảnh không?)",
+        "note": "Rảnh rỗi.",
+        "starred": false
+      },
+      {
+        "term": "没空儿 (Méi kòngr)",
+        "definition": "Bận, không rảnh",
+        "example": "我今天没空儿。(Hôm nay tôi không rảnh.)",
+        "note": "Bận rộn.",
+        "starred": false
+      },
+      {
+        "term": "事情 (Shìqing)",
+        "definition": "Việc, sự việc",
+        "example": "我有事情。(Tôi có việc rồi.)",
+        "note": "Danh từ.",
+        "starred": false
+      },
+      {
+        "term": "办 (Bàn)",
+        "definition": "Làm, giải quyết (việc)",
+        "example": "办事。(Làm việc.)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "借 (Jiè)",
+        "definition": "Mượn",
+        "example": "借书。(Mượn sách.)",
+        "note": "Động từ.",
+        "starred": true
+      },
+      {
+        "term": "还 (Huán)",
+        "definition": "Trả lại (đồ mượn)",
+        "example": "还书。(Trả sách.)",
+        "note": "Động từ.",
+        "starred": true
+      },
+      {
+        "term": "回 (Huí)",
+        "definition": "Về, trở về",
+        "example": "回宿舍。(Về ký túc xá.)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "什么时候 (Shénme shíhou)",
+        "definition": "Khi nào, lúc nào",
+        "example": "什么时候见？(Khi nào gặp nhau?)",
+        "note": "Hỏi mốc thời gian.",
+        "starred": true
+      }
+    ]
+  },
+  {
+    "deck": {
+      "id": "deck-boya1-unit-10",
+      "title": "Boya 1 - Bài 10: 你家有几口人 (Gia đình & Nghề nghiệp)",
+      "description": "Thành viên gia đình, người thân, nghề nghiệp xã hội và tuổi tác.",
+      "termLang": "zh-CN",
+      "definitionLang": "vi-VN"
+    },
+    "cards": [
+      {
+        "term": "家 (Jiā)",
+        "definition": "Nhà, gia đình",
+        "example": "我家在河内。(Nhà tôi ở Hà Nội.)",
+        "note": "Danh từ.",
+        "starred": false
+      },
+      {
+        "term": "有 (Yǒu)",
+        "definition": "Có",
+        "example": "我家有四口人。(Nhà tôi có bốn người.)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "没有 (Méiyǒu)",
+        "definition": "Không có",
+        "example": "我没有哥哥。(Tôi không có anh trai.)",
+        "note": "Phủ định của 有.",
+        "starred": true
+      },
+      {
+        "term": "口 (Kǒu)",
+        "definition": "Người (lượng từ gia đình)",
+        "example": "几口人？(Mấy người?)",
+        "note": "Lượng từ thành viên gia đình.",
+        "starred": true
+      },
+      {
+        "term": "爸爸 (Bàba)",
+        "definition": "Bố, cha",
+        "example": "我爸爸是医生。(Bố tôi là bác sĩ.)",
+        "note": "Gia đình.",
+        "starred": false
+      },
+      {
+        "term": "妈妈 (Māma)",
+        "definition": "Mẹ, má",
+        "example": "妈妈是老师。(Mẹ là giáo viên.)",
+        "note": "Gia đình.",
+        "starred": false
+      },
+      {
+        "term": "哥哥 (Gēge)",
+        "definition": "Anh trai",
+        "example": "哥哥工作了。(Anh trai đi làm rồi.)",
+        "note": "Gia đình.",
+        "starred": false
+      },
+      {
+        "term": "弟弟 (Dìdi)",
+        "definition": "Em trai",
+        "example": "弟弟在上学。(Em trai đang đi học.)",
+        "note": "Gia đình.",
+        "starred": false
+      },
+      {
+        "term": "姐姐 (Jiějie)",
+        "definition": "Chị gái",
+        "example": "姐姐很好。(Chị gái rất tốt.)",
+        "note": "Gia đình.",
+        "starred": false
+      },
+      {
+        "term": "妹妹 (Mèimei)",
+        "definition": "Em gái",
+        "example": "我有两个妹妹。(Tôi có hai người em gái.)",
+        "note": "Gia đình.",
+        "starred": false
+      },
+      {
+        "term": "工作 (Gōngzuò)",
+        "definition": "Công việc / Làm việc",
+        "example": "你做什么工作？(Bạn làm công việc gì?)",
+        "note": "Danh từ / Động từ.",
+        "starred": false
+      },
+      {
+        "term": "做 (Zuò)",
+        "definition": "Làm",
+        "example": "做工作。(Làm việc.)",
+        "note": "Động từ.",
+        "starred": false
+      },
+      {
+        "term": "医生 (Yīshēng)",
+        "definition": "Bác sĩ",
+        "example": "他是医生。(Anh ấy là bác sĩ.)",
+        "note": "Nghề nghiệp.",
+        "starred": false
+      },
+      {
+        "term": "岁 (Suì)",
+        "definition": "Tuổi",
+        "example": "我二十岁。(Tôi hai mươi tuổi.)",
+        "note": "Tuổi tác.",
+        "starred": false
+      },
+      {
+        "term": "几岁 (Jǐ suì)",
+        "definition": "Mấy tuổi (hỏi trẻ nhỏ)",
+        "example": "你弟弟几岁？(Em trai bạn mấy tuổi?)",
+        "note": "Hỏi tuổi dưới 10.",
+        "starred": false
+      },
+      {
+        "term": "多大 (Duō dà)",
+        "definition": "Bao nhiêu tuổi",
+        "example": "你多大了？(Bạn bao nhiêu tuổi rồi?)",
+        "note": "Hỏi tuổi người lớn.",
+        "starred": true
+      },
+      {
+        "term": "和 (Hé)",
+        "definition": "Và, với (liên từ)",
+        "example": "爸爸和我。(Bố và tôi.)",
+        "note": "Liên từ nối danh từ.",
+        "starred": false
+      }
+    ]
+  }
+]
+
+import { TOPIK2_SYNONYMS_DECK } from './topikSeedData'
+
+export { TOPIK2_SYNONYMS_DECK }
+export const INITIAL_SEED_DECKS: SeedDeck[] = [...BOYA1_DECKS, TOPIK2_SYNONYMS_DECK]
